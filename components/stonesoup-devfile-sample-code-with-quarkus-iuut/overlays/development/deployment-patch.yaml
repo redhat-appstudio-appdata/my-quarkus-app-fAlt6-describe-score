@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: stonesoup-devfile-sample-code-with-quarkus-iuut
+  namespace: btison-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio/user-workload@sha256:e8c52ee7de5afbac8ee7ebf33fd4cfc2145357a3353351b5bc582eaa9b336b93
+        name: my-java-quarkus
+        resources: {}
+status: {}
